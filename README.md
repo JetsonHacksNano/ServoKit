@@ -14,11 +14,15 @@ Installs the approxeng.input gamepad input library using pip. This provides supp
 <blockquote>$ ./installGamePad.sh</blockquote>
 
 <h3>servoPlay.py</h3>
-A simple example of controlling two servos with a game controller. For testing, two servos are connected to an Adafruit PCA9685 breakout board in positions 0 and 1.<br>
+A simple example of controlling two servos with a game controller. For testing, two servos are connected to an Adafruit PCA9685 breakout board in positions 0 and 1. For testing, a Sony PS4 game controller was used.<br>
 
 <blockquote>$ python3 servoPlay.py</blockquote>
 
 For the servo attached to port 0, the left gamepad joystick X direction controls the position of the servo. For the other servo, the right joystick in the Y direction controls the position.
+
+Here's the wiring diagram:
+
+![Wiring Diagram](images/NanoI2CWiringDiagram.jpg)
 
 <h2>Releases</h2>
 Current Work in Progress
