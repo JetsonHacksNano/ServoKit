@@ -20,6 +20,9 @@ A simple example of controlling two servos with a game controller. For testing, 
 
 For the servo attached to port 0, the left gamepad joystick X direction controls the position of the servo. For the other servo, the right joystick in the Y direction controls the position.
 
+<h4>Wiring</h4>
+On the Jetson Nano, pins 27 (SDA) and 28 (SCL) on the J41 GPIO header are connected to I2C Bus 0. Pins 3 (SDA) and 4 (SCL) are connected to I2C Bus 1. The demo servoPlay.py uses pins 27 and 28.
+
 Here's the wiring diagram:
 
 ![Wiring Diagram](images/NanoI2CWiringDiagram.jpg)
