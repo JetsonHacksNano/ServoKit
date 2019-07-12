@@ -31,8 +31,6 @@ time.sleep(0.5)
 sweep = range(180,0, -1)
 for degree in sweep :
     kit.servo[0].angle=degree
-    # kit.servo[1].angle=degree
-    # time.sleep(0.01)
     
 last_presses = None
 while True:
@@ -52,7 +50,5 @@ while True:
                         # print(axis_name, joystick[axis_name])
                         
                     if axis_name == 'ry' :
-                        # kit.servo[1].angle=desired_angle
-                        kit.continuous_servo[1].throttle=joystick[axis_name]
-##                time.sleep(0.1)
+                         kit.continuous_servo[1].throttle=joystick[axis_name]
             
