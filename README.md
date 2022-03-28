@@ -27,5 +27,12 @@ Here's the wiring diagram:
 
 ![Wiring Diagram](images/NanoI2CWiringDiagram.jpg)
 
+<h3>For user on python 3.6</h3>
+If you get "Error:future feature annotations is not defined",you specify the Adafruit-PlatformDetect version to 3.19.6.<br>
+Frist, remove the current version(anything > 3.19.6)<br>
+<blockquote>$sudo -H pip3 uninstall Adafruit-PlatformDetect</blockquote>
+Then install the version(3.19.6)<br>
+<blockquote>$sudo -H pip3 install Adafruit-PlatformDetect==3.19.6</blockquote>
+Now you install the adafruit-circuitpython-servokit :)<br>
 <h2>Releases</h2>
 Current Work in Progress
