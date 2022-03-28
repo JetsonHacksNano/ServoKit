@@ -5,6 +5,11 @@ set -e
 sudo ./scripts/setPermissions.sh $USER
 # Then install servokit
 sudo apt-get install python3-pip -y
+# for jetson user on python 3.6.x
+# if you get a Adafruit-PlatformDetect > 3.19.6
+# you need to remove current version before install the working version
+# sudo -H pip3 uninstall Adafruit-PlatformDetect
+sudo -H pip3 install Adafruit-PlatformDetect==3.19.6
 sudo -H pip3 install adafruit-circuitpython-servokit
 echo ""
 echo "Adafruit CircuitPython ServoKit installed."
