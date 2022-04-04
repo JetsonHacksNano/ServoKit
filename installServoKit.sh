@@ -13,6 +13,9 @@ sudo apt-get install python3-pip -y
 sudo -H pip3 install adafruit-circuitpython-servokit
 sudo -H pip3 install Adafruit-PlatformDetect==3.19.6
 sudo -H pip3 install Adafruit_CircuitPython_BusDevice==5.1.5
+# for NameError: name 'I2C' is not defined
+sudo -H pip3 install adafruit-circuitpython-typing
+
 echo ""
 echo "Adafruit CircuitPython ServoKit installed."
 echo "Please logoff/logon or reboot in order for I2C permissions to take effect."
