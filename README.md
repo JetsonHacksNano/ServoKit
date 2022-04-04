@@ -34,5 +34,9 @@ Frist, remove the current version(anything > 3.19.6)<br>
 Then install the version(3.19.6)<br>
 <blockquote>$sudo -H pip3 install Adafruit-PlatformDetect==3.19.6</blockquote>
 Now you install the adafruit-circuitpython-servokit :)<br>
+If you get "NameError: name 'I2C' is not defined"<br>
+<blockquote>$sudo -H pip3 install adafruit-circuitpython-typing</blockquote>
+
 <h2>Releases</h2>
 Current Work in Progress
+
